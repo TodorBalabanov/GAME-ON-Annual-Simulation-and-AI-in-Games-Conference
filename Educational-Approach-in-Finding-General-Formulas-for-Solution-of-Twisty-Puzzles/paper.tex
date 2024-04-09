@@ -1,17 +1,11 @@
 \documentclass[a4paper,twocolumn,10pt]{article}
-%\documentclass{llncs}
+
 \usepackage{eurosis}
 \usepackage{url}
 \usepackage{natbib}
 
 \usepackage[pdftex]{graphicx}
 \graphicspath{{images/}}
-
-%\bibliographystyle{plainnat}
-\bibliographystyle{eurosis}
-
-%\bibliographystyle{abbrvnat}
-\bibpunct[; ]{(}{)}{,}{a}{}{;}
 
 \begin{document}
 
@@ -76,7 +70,7 @@ For generation purposes, the game is reconstructed as a model represented by one
 
 All experiments were conducted on a computer with the following specifications: Asus-2023, featuring a 12th generation Intel(R) Core(TM) i7-12700 processor running at 2.10 GHz, 32 GB RAM, and a 64-bit operating system (x64-based processor). The specific operating system version used is Windows 11 Pro 23H2 22631.3007, and the software utilized for the experiments is Java(TM) SE Runtime Environment (build 19.0.2+7-44) Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing).
 
-As a result of the performed calculations, 2,198,814 formulas were identified, meeting the conditions of having a length of 1 to 7 commands and displacing only two balls relative to the initial state of the puzzle [4]. The number of unique formulas is significantly less, as complete exhaustion generates sequences of the type -A+A, canceling each other out.
+As a result of the performed calculations, 2,198,814 formulas were identified, meeting the conditions of having a length of 1 to 7 commands and displacing only two balls relative to the initial state of the puzzle\cite{Balabanov2024b}. The number of unique formulas is significantly less, as complete exhaustion generates sequences of the type -A+A, canceling each other out.
 
 From this detailed list of formulas, one can manually select those offering the best prospect of ordering the puzzle in its final phase. Examples of such formulas include +3C+3B-3C-3B (Fig. \ref{figure02}) and -1C-4B+1C+4B (Fig. \ref{figure03}).
 
@@ -107,5 +101,7 @@ Future research could explore other games within the combinatorial puzzles categ
 This work has been granted funding from the National Scientific fund program for COST actions support KP-06-KOST/23 and ...
 
 \bibliography{references}
+\bibliographystyle{eurosis}
+\bibpunct[; ]{(}{)}{,}{a}{}{;}
 
 \end{document}
